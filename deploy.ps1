@@ -1,5 +1,5 @@
 #Attack Surface Reduction Rules JSON File
-$URL = "https://raw.githubusercontent.com/OPEN-LAKE-TECHNOLOGY/azure/blob/main/AttackSurfaceReductionRules.json"
+$URL = "https://raw.githubusercontent.com/OPEN-LAKE-TECHNOLOGY/azure/main/AttackSurfaceReductionRules.json"
 #Convert ASR Rules from JSON
 $ASRRules = (Invoke-WebRequest -Uri $URL -UseBasicParsing).Content | ConvertFrom-Json
 foreach($Rule in $ASRRules){
